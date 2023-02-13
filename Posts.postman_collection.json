@@ -1,0 +1,183 @@
+{
+	"info": {
+		"_postman_id": "659a516f-a8ef-48a3-9b35-559a11faf079",
+		"name": "Posts",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "25644870"
+	},
+	"item": [
+		{
+			"name": "getPosts",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNjc2MjkyMzA0LCJpYXQiOjE2NzYyOTExMDQsImp0aSI6IjBmNTUwYzBmYTI0NDQwMTFhYWI1ZjU5MjczMTQxNjFkIiwidXNlcl9pZCI6Mn0.v0gpKZpX9z9P4Z9T58UxU9MAcL_4CKLG_hBw6m_SIkg",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/posts/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"posts",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "patchPost",
+			"request": {
+				"method": "PATCH",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNjc2MjkyMzA0LCJpYXQiOjE2NzYyOTExMDQsImp0aSI6IjBmNTUwYzBmYTI0NDQwMTFhYWI1ZjU5MjczMTQxNjFkIiwidXNlcl9pZCI6Mn0.v0gpKZpX9z9P4Z9T58UxU9MAcL_4CKLG_hBw6m_SIkg",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"published\":true\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/posts/3/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"posts",
+						"3",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "createPost",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNjc2MjkyMzA0LCJpYXQiOjE2NzYyOTExMDQsImp0aSI6IjBmNTUwYzBmYTI0NDQwMTFhYWI1ZjU5MjczMTQxNjFkIiwidXNlcl9pZCI6Mn0.v0gpKZpX9z9P4Z9T58UxU9MAcL_4CKLG_hBw6m_SIkg",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "\r\n    {\r\n  \"title\": \"Secuencia microtonal para crear canciones increíbles\",\r\n  \"content\": \"El primer paso consistira en...\",\r\n  \"slug\": \"secuencia-microtonal\",\r\n  \"published\": false\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/posts/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"posts",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "deletePost",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNjc2MjkzMTU0LCJpYXQiOjE2NzYyOTE5NTQsImp0aSI6IjAyNzdkOThmYTdkMDQxZDFhZTc2MDMzZDc5MmE0ZGYzIiwidXNlcl9pZCI6MX0.j55gRMNrkQOzcB10tFpyWwq3Q2vBiUTucgh8XJAeCds",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/posts/2/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"posts",
+						"2",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getPostById",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/posts/1",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"posts",
+						"1"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
